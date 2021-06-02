@@ -12,7 +12,6 @@ Health Check
 
 To see your applications health enter url `http://localhost:8081/healthcheck`
 
-
 curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Software Engineer\"}" http://localhost:8080/jobs
 
-curl ttp://localhost:8080/jobs?search=Software
+curl http://localhost:8080/jobs?search=Software
