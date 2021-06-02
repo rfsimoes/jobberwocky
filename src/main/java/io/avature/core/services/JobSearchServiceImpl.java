@@ -62,6 +62,8 @@ public class JobSearchServiceImpl implements JobSearchService {
             String uri = String.format(e.getSearchUrl(), search);
             //TODO make it multithreaded
             //TODO pagination?
+            //TODO handle rate limiting
+            //TODO save results and ask only for results after first search
             CompletableFuture<HttpResponse>
                     httpResponseCompletableFuture =
                     CompletableFuture.supplyAsync(() -> callExternalResource(uri));
